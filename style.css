@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.profile {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile img {
+    height: 6.7rem;
+    width: 6.9rem;
+    border-radius: 100%;
+    border-color: white;
+    margin-bottom: .8rem;
+    cursor: pointer;
+    transition: .4s;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile img:hover {
+    transform: scale(1.1);
+}
+
+.profile h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    letter-spacing: .1rem;
+    text-align: center;
+}
+
+.profile p {
+    font-size: .8rem;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top: .5rem;
+}
+
+.heighttext {
+    padding: 5px;
+    width: 100%;
+    /* line-height: 10px; */
+    background-color: transparent;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 60;
+    /* text-shadow: 1px 1px 2px black; */
+    box-shadow: 7px 9px 13px rgba(0, 0, 0, 0.1);
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    font-size: 20px;
+    text-align: left;
+    /* Firefox */
+}
+
+.heighttext1 {
+    padding: 1px 5px;
+    width: 100%;
+    /* line-height: 10px; */
+    background-color: transparent;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 60;
+    /* text-shadow: 1px 1px 2px black; */
+    box-shadow: 7px 9px 12px rgba(0, 0, 0, 0.1);
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+ ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
+
+/* .heighttext:focus {
+    outline: none;
+    outline-offset: none;
+} */
+
+.links-list {
+    min-width: 50vw;
+}
+
+.links-list .link {
+    border: 2px solid #fff;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    padding: .8rem;
+    cursor: pointer;
+    transition: .3s;
+    /* flex-wrap: wrap; */
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.links-list .link:hover {
+    background: #fff;
+    transform: scale(1.04);
+}
+
+.links-list .link:hover i {
+    color: #4a00e0;
+}
+
+.links-list .link:hover p {
+    color: #4a00e0;
+}
+
+.link i {
+    color: #fff;
+    padding-left: .5rem;
+    padding-right: 2rem;
+    position: relative;
+    font-size: 1.3rem;
+}
+
+.link p {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .06rem;
+    padding-right: 14rem;
+    padding-left: 8rem;
+}
+
+@media (max-width:450px) {
+    .links-list .link {
+        width: 100%;
+    }
+    .link img {
+        padding-right: 1rem;
+    }
+    .link p {
+        padding-right: 4rem;
+        padding-left: 1rem;
+    }
+}
+
+.links-list1 {
+    min-width: 50vw;
+}
+
+.links-list1 .link1 {
+    border: 2px solid #fff;
+    margin: .5rem 20rem .2rem;
+    border-radius: .5rem;
+    background: #fff;
+    /* display: inline; */
+    padding: 1rem .8rem;
+    cursor: pointer;
+    transition: .3s;
+    /* flex-wrap: wrap; */
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.links-list1 .link2 .myBtn1 {
+    border: 3px solid #fff;
+    margin: .5rem 20s0rem .2rem;
+    border-radius: .5rem;
+    /* background: #fff; */
+    /* display: inline; */
+    padding: 1rem .8rem;
+    cursor: pointer;
+    transition: .3s;
+    /* flex-wrap: wrap; */
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.links-list1 .link2 {
+    border: 2px solid #fff;
+    margin: .2rem 20rem .2rem;
+    border-radius: .7rem;
+    /* background: #fff; */
+    /* display: inline; */
+    padding: 1rem .8rem;
+    cursor: pointer;
+    transition: .3s;
+    /* flex-wrap: wrap; */
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.links-list1 .link2:hover {
+    background: #fff;
+    transform: scale(1.01);
+}
+
+.links-list1 .link2:hover i {
+    color: #4a00e0;
+}
+
+.links-list1 .link2:hover p {
+    color: #4a00e0;
+}
+
+.link2 i {
+    color: #fff;
+    padding-left: .5rem;
+    padding-right: 2rem;
+    position: relative;
+    font-size: 1.3rem;
+}
+
+.link2 p {
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    font-weight: 600;
+    text-align: center;
+    font-size: 19px;
+    font-style: inherit;
+}
+
+@media (max-width:450px) {
+    .links-list1 .link2 {
+        width: 100%;
+    }
+    .link2 img {
+        padding-right: 1rem;
+    }
+    .link2 p {
+        padding-right: 4rem;
+        padding-left: 1rem;
+    }
+}
+
+.links-list1 .link1:hover {
+    background: #fff;
+    transform: scale(1.01);
+}
+
+.links-list1 .link1:hover i {
+    color: #4a00e0;
+}
+
+.links-list1 .link1:hover p {
+    color: #4a00e0;
+}
+
+.link1 i {
+    color: #fff;
+    padding-left: .5rem;
+    padding-right: 2rem;
+    position: relative;
+    font-size: 1.3rem;
+}
+
+.link1 p {
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    font-weight: 600;
+    text-align: center;
+    font-size: 19px;
+    font-style: inherit;
+}
+
+@media (max-width:450px) {
+    .links-list1 .link1 {
+        width: 100%;
+    }
+    .link1 img {
+        padding-right: 1rem;
+    }
+    .link1 p {
+        padding-right: 4rem;
+        padding-left: 1rem;
+    }
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.contact i {
+    padding: .6rem;
+    border: 1.5px solid #fff;
+    margin: .5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact i:hover {
+    background: #fff;
+    color: #4a00e0;
+    transform: scale(1.1);
+}
+
+footer p {
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(201, 200, 200);
+    margin-bottom: 1rem;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 1rem;
+    padding: 1rem 1rem 1rem;
+    border: 1px solid #888;
+    /* display: table-caption; */
+    width: 80%;
+}
+
+.modal-content .output {
+    border: 2px solid #fff;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    /* display: flex; */
+    padding: .8rem;
+    cursor: pointer;
+    transition: .3s;
+    /* flex-wrap: wrap; */
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content:hover {
+    background: #fff;
+    transform: scale(1.04);
+}
+
+.modal-content:hover i {
+    color: #4a00e0;
+}
+
+.modal-content :hover p {
+    color: #4a00e0;
+}
+
+.modal-content i {
+    color: #fff;
+    padding-left: .5rem;
+    padding-right: 2rem;
+    position: relative;
+    font-size: 1.3rem;
+}
+
+.modal-content p {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .06rem;
+    padding-right: 14rem;
+    padding-left: 8rem;
+}
+
+@media (max-width:450px) {
+    .smodal-content {
+        width: 100%;
+    }
+    .modal-content img {
+        padding-right: 1rem;
+    }
+    .modal-content p {
+        padding-right: 4rem;
+        padding-left: 1rem;
+    }
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
